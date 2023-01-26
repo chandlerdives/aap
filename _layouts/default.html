@@ -1,16 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <title>All About Packaging</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/style.css" />
-    <title>{{page.title}}</title>
-</head>
+        <!-- Google Fonts --> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@300;400;700;800&family=Noto+Sans:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 
-<body>
-    {{content}}
-</body>
+        <!-- Gridlex -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
+        <!-- Font Awesome Version 5 for Icons  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+        <!-- Magnific Popup for lightbox galleries   -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+
+        <!--- Slick CSS (handles the functionality) --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!--- Slick theme that handles the way everything slides. --->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Animate on scroll -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <!-- our own custom stylesheet (this always goes last) -->
+        <link rel="stylesheet" type="text/css" href="/style.css" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+
+    <!-- Header -->
+        <section class="banner-front-page">
+            <header class="grid">
+                <div class="col-4">
+                    <img src="images/AAP-transparent-sm.png" alt="">
+                </div>
+                <nav class="col-8 mob-hide txtright">
+                    <a href="/ourproducts.html"> Our Products </a>
+                    <a href="/theenvironment.html"> The Environment </a>
+                    <a href="/aboutus.html"> About Us </a>
+                    <a href=""> Contact </a>
+                </nav>
+                <div class="col-8 right">
+                    <a class="hamburger-button mob-show"> 
+                        <div class="container"onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div> 
+                    </a>
+                </div>
+            </header>
+    
+            <div class="mobile-menu"> 
+                <nav> 
+                    <a href=""> Our Products </a>
+                    <a href=""> The Environment </a>
+                    <a href=""> About Us </a>
+                    <a href=""> Contact </a>
+                </nav>
+            </div>
+
+
+        <!-- Main content starts here -->
+        {{content}}
+
+
+        <!-- Footer -->
+        <footer class="featured-bg whitetxt">
+            <section class="grid">
+                <div class="col-6_sm-12 padded">
+                    <img src="images/AAP - Logo Drafts.png" alt="">  
+                    <p> <strong> Email: </strong> allaboutpackaging.co.uk </p>
+                    <p> <strong> Phone: </strong> 0203 994 0430 </p>
+
+                    <p> <strong> T&Cs </strong> </p>
+                    <p> <strong> Privacy Policy </strong> </p>
+
+                    <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="col-6-middle padded">
+                    <h2 id="getintouch"> Get In Touch </h2>
+                    <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
+                        <div class="col-6_sm-12 padded-2">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="col-6_sm-12 padded-2">
+                            <input type="email" name="_replyto" placeholder="Your Email">
+                        </div>
+                        <div class="col-12 padded-2">
+                            <textarea placeholder="Your Message"></textarea>
+                            <input type="submit" value="Send" class="button">
+                        </div>
+                  </form>
+                </div>
+              </section>
+        </footer>
+  
+        <!--- Add jQuery (this goes first) --->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+        <!--- This is Slick --->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js" integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <!--- Animate on Scroll --->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!--- custom javascript files (this goes last) --->
+        <script src="/scripts.js"></script>    
+    </body>
 </html>

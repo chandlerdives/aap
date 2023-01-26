@@ -1,0 +1,49 @@
+var allPanels = $('.accordion > dd').hide();
+
+	$('.accordion > dt').click(function() {
+		allPanels.slideUp();
+
+    $(this).filter('.open').removeClass('open').addClass('closing')
+    $('.accordion > dt ').removeClass('open');
+    $(this).not(".closing").addClass('open').next().slideDown();
+    $('.accordion > dt').removeClass('closing');
+    
+    return false;
+	});
+
+  // Animate on scroll
+ AOS.init({
+  offset: 250, // offset (in px) from the original trigger point
+  delay: 100, // values from 0 to 3000, with step 50ms
+  duration: 1000, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+});
+
+
+//   Slider Container
+$('.slider-container').slick({
+	autoplay: true, // Do we want it to autoplay? true or false
+	autoplaySpeed: 5000, // How long between each slide when auto-playing
+	speed: 500, // How fast is the transition in milliseconds
+	arrows: false, // Do you want to show arrows to trigger each slide
+	accessibility: true, // Enables keyboard tabbing and arrow key navigation
+	dots: true, // Enables the dots below to show how many slides
+	fade: false, // Changes the animate from slide to fade if true
+	infinite: true, // When true, means that it will scroll in a circle
+	pauseOnHover: false, // When true means the autoplay pauses when hovering
+	pauseOnDotsHover: true, // Pauses the autoplay when hovering over the dots
+});
+
+// hamburger button
+  $('.hamburger-button').click(function(){
+    $('.mobile-menu').slideToggle(100);
+    $(this).toggleClass('active');
+  });
+  
+  function myFunction(x) {
+    x.classList.toggle("change");
+  }
+
+
+

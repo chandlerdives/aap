@@ -1,5 +1,476 @@
+/* -------------- CSS Reset -------------- */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+  }
+  
+  html { scroll-behavior: smooth; }
+  
+  img { max-width: 100%; }
+  
+  body { color: #484848; }
+  
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  }
+  
+   /* this overrides the default padding and margin on gridlex elements */
+  [class*=grid] {   margin: 0;  }
+  [class*=col]  {   padding: 0; }
+  
+  
+  /* ------------ Utility Styles ---------- */
+  .txtleft     { text-align: left;   }
+  .txtright    { text-align: right;  }
+  .txtcenter   { text-align: center; }
+  
+  .padded     { padding: 5%; }
+  .padded-2   { padding: 2%; }
+  .padded-15  { padding: 15%; }
+  .padded-05  { padding: 0.5rem }
+
+  .relative {position: relative;}
+  
+ 
+  /* bg-colours  */
+  .featured-bg { background-color: #002E57; }
+  .light-bg    { background-color: #F9F6F2; }
+
+
+  
+  
+  /* --------------- Typography ------------ */
+  h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: #002E57;
+  }
+  
+  h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+
+  h3 {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #002E57;
+  }
+
+  h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+   
+  p {
+    font-family: 'Mukta Vaani', sans-serif;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
+  .whitetxt {
+    font-family: 'Mukta Vaani', sans-serif;
+    color: white;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #002E57;
+  }
+  
+  
+  /* ---------- Button Styles ----------- */
+  .button {
+    font-family: 'Mukta Vaani', sans-serif;
+    color: white;
+	  text-decoration: none;    
+	  text-transform: uppercase;    
+	  letter-spacing: 1px;       
+	  border: 2px solid #ffffff;   
+	  border-radius: 10px; 
+	  padding: 0.5rem 2rem;    
+	  display: inline-block;    
+	  transition: 0.5s all; 
+  }
+
+  .button:hover {
+    color: #ffffff;    
+    background-color: #D09752;    
+  }
+
+  .button-2 {
+    font-family: 'Mukta Vaani', sans-serif;
+    color: #002E57;
+	  text-decoration: none;    
+	  text-transform: uppercase;    
+	  letter-spacing: 1px;       
+	  border: 2px solid #002E57;   
+	  border-radius: 10px; 
+	  padding: 0.5rem 2rem;    
+	  display: inline-block;    
+	  transition: 0.5s all; 
+  }
+
+  .button-2:hover {
+    color: #ffffff;    
+    background-color: #D09752;    
+  }
+  
+  
+  
+  /*--------------- Header and Footer ------------ */
+  header {
+    padding: 2% 5%;
+    background: 0 0;
+  }
+  
+  header nav a {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 1.2rem;
+    padding: 1.5rem 1.2rem;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+  }
+  
+  header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: 0.3s;
+  }
+  
+  header a:hover {
+    color: #D09752;
+  }
+  
+  footer nav a {
+    font-family: 'Mukta Vaani', sans-serif;
+    margin: 0.8rem;
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: 0.5s;
+  }
+  
+  footer nav a:hover {
+    color: #D09752;
+  }
+
+    /* ----------- Hamburger Nav -------------- */
+  /* this is the button which changes into an x */
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2px;
+    background-color: #484848;
+    margin: 9px 0;
+    transition: 0.4s;
+  }
+  
+  /* rotate first bar */
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  
+  /* buttons styles */
+  .hamburger-button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 2.5rem;
+    line-height: 0.8;
+    margin-top: -2.5rem;
+    position: fixed;
+    right: 1rem;
+    top: 2.5rem;
+    z-index: 9999;
+  }
+  
+  
+  /* this is the nav menu for mobile */
+  .mobile-menu {
+      display: none; 
+      background-color: #002E57; 
+      padding: 2%;
+      position: fixed; 
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 999;
+  }
+  
+  .mobile-menu nav a {
+    font-family: 'Mukta Vaani', sans-serif; 
+      text-decoration: none; 
+      color: white; 
+      padding: 1rem 1.2rem;
+      display: block;
+      font-weight: normal;
+      font-size: 0.9rem;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: 0.3s;
+  }
+
+  .mobile-menu a:hover {
+    color: #BC4749;
+  }
+
+
+  
+  /* Default Responsive Styles (Dekstop and below) */
+  .mob-show {
+      display: none; 
+  }
+  
+  @media(max-width:1071px) {
+      .mob-hide { display: none; }
+      .mob-show { display: block; }
+  }
+  
+  
+  /* ---------- Font Awesome ------------ */
+  .fa-regular {      
+    font-size: 1rem;
+    font-family: 'Font Awesome 5 Free';
+    color: #484848;
+  }
+
+  .fa-angles-down {        
+    font-size: 3rem;
+    font-family: 'Font Awesome 5 Free';
+    margin-bottom: 1rem;
+    color: #002E57;
+  }
+
+  .fa-angles-down:hover {  
+    transition: 0.5s;      
+    color: #D09752;
+  }
+
+  .fa-facebook, .fa-twitter, .fa-linkedin { 
+    padding: 1.5%;     
+    font-size: 2rem;
+    color: white;
+  }
+
+
+  
+  /* -------------- Banners --------------- */
+  .banner-front-page {
+    background-image: url(images/warehouse-stackedpallets-fade.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-contact {
+    background-image: something in here;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+
+   
+  /* ------------------ Photos ---------------- */
+  img {
+    max-width: 100%;
+  }
+
+  .bg-pallets {
+    background-image: url(images/pallets.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-shrinkwrap {
+    background-image: url(images/shrink-wrap-faded.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+
+  .bg-ashby {
+    background-image: url(images/ashby.JPG);
+    background-size: cover;
+    background-position: center;
+    max-width: 200px;
+    margin-top: -7rem;
+    margin-left: rem;
+    margin-bottom: 1rem;
+    border-radius: 46% 46% 0% 0%;
+    z-index: 2;
+  }
+
+  /* ------------ Forms -------------- */
+  input, textarea {
+    border-style: solid;
+    border: 2px solid #c8c8cd;
+    padding: 0.8em;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    vertical-align: top; 
+  }
+
+  /* ------------ Accordion -------------- */
+  .accordion {
+    /* max-width:30%; */
+    margin:auto;
+    position:relative;
+  }
+  .accordion dt{
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin: 0.25rem 0;
+    display:block;
+    color: #5F6B36;
+    position: relative;
+    text-decoration: none;
+  }
+  .accordion dd {
+    padding: 0.5rem;
+    font-family: 'Mukta Vaani', sans-serif;
+  }
+  
+  /* Icon */
+  .accordion dt::after {
+    content: "+";
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    line-height: 1;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  
+  .accordion dt.open::after {
+    transform:rotate(45deg);
+  }
+  
+
+  /* ----------- Card Styles ----------- */
+.card {
+  color: white;
+  border: 50px;
+  border-radius: 5px;
+  border-color: #5F6B36;
+}
+
+.card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0,0,0,.2),0 10px 10px -5px rgba(0,0,0,.2);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+}
+
+.card img {
+  max-width: 120%;
+}
+
+
+@media(max-width: 100em) {
+  .horizontal-scroll {
+    display: flex;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 7%;
+  }
+  .mob-padded-0 {
+    padding-left: 0;
+    padding-right: 0;
+  } 
+}
+
+/* ------- Slick Carousel --------- */
+/* Slider */
+.slider-container {
+  padding: 5%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.slider-item {
+  padding: 0.5rem;
+}
+
+.slider-item p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: rgb(200, 200, 200);
+}
+
+.slick-dots {
+    bottom: 12%;
+    left: 0; /* This align the dots perfectly to the center, do not delete */
+}
+
+.slick-dots li,
+.slick-dots li button {
+   	width: 10px;
+}
+
+.slick-dots li button::before {
+    font-size: 12px;
+    color: #002E57;
 }
