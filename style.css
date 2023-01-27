@@ -47,6 +47,7 @@
   h1 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2.5rem;
+    text-transform: uppercase;
     line-height: 1;
     margin-bottom: 1.5rem;
     color: #002E57;
@@ -55,6 +56,7 @@
   h2 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2.5rem;
+    text-transform: uppercase;
     line-height: 1;
     margin-bottom: 1.5rem;
     color: white;
@@ -72,6 +74,7 @@
   h4 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2rem;
+    text-transform: uppercase;
     line-height: 1;
     margin-bottom: 1.5rem;
     color: white;
@@ -288,6 +291,12 @@
     color: #002E57;
   }
 
+  .fa-handshake, .fa-check, .fa-user-group, .fa-lightbulb {        
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+  }
+
   .fa-angles-down:hover {  
     transition: 0.5s;      
     color: #D09752;
@@ -304,6 +313,13 @@
   /* -------------- Banners --------------- */
   .banner-front-page {
     background-image: url(images/warehouse-stackedpallets-fade.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-about-us {
+    background-image: url(images/shrink-wrapped-boxes.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -335,7 +351,6 @@
     background-attachment: fixed;
   }
 
-
   .bg-ashby {
     background-image: url(images/ashby.JPG);
     background-size: cover;
@@ -346,6 +361,63 @@
     margin-bottom: 1rem;
     border-radius: 46% 46% 0% 0%;
     z-index: 2;
+  }
+
+  /* ----------- Gallery ----------- */
+  /* Aspect Ratio  */
+  .portrait-tall { padding-bottom: 175%; }
+  .portrait { padding-bottom: 125%; }
+  .square { padding-bottom: 100%; }
+  .landscape { padding-bottom: 66%; }
+  .landscape-wide { padding-bottom: 56%; }
+
+  /* Background Position */
+  .bg-pos-t { background-position: top; }
+  .bg-pos-b { background-position: bottom; }
+  .bg-pos-l { background-position: left; }
+  .bg-pos-r { background-position: right; }
+
+
+  .gallery [class*="col-"] {
+    padding: 0.5%;
+    border: blue;
+  }
+
+  /* Gallery - Background Images  */
+  .bg-img-1 {
+    background-image: url(images/cardboard.jpeg);
+  }
+
+  .bg-img-2 {
+    background-image: url(images/cardboard.jpeg);
+  }
+
+  .bg-img-3 {
+    background-image: url(images/cardboard.jpeg);
+  }
+
+  .bg-img-4 {
+    background-image: url(images/cardboard.jpeg);
+  }
+
+  .bg-img-5 {
+    background-image: url(images/cardboard.jpeg);
+  }
+
+  .bg-image [class*=bg-image] {
+    background-color: rgb(240,240,240);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
+
+  /* Background of gallery when active  */
+  .lg-backdrop {
+    background-color: grey;
+  }
+
+  .lg-backdrop.in {
+    opacity: 0.95;
   }
 
   /* ------------ Forms -------------- */

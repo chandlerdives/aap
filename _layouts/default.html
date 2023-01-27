@@ -29,6 +29,9 @@
         <!-- Animate on scroll -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+        <!-- Lightgallery for pop-ups  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!-- our own custom stylesheet (this always goes last) -->
         <link rel="stylesheet" type="text/css" href="/style.css" />
 
@@ -36,40 +39,7 @@
     </head>
     <body>
 
-
-    <!-- Header -->
-        <section class="banner-front-page">
-            <header class="grid">
-                <div class="col-4">
-                    <img src="images/AAP-transparent-sm.png" alt="">
-                </div>
-                <nav class="col-8 mob-hide txtright">
-                    <a href="/ourproducts.html"> Our Products </a>
-                    <a href="/theenvironment.html"> The Environment </a>
-                    <a href="/aboutus.html"> About Us </a>
-                    <a href=""> Contact </a>
-                </nav>
-                <div class="col-8 right">
-                    <a class="hamburger-button mob-show"> 
-                        <div class="container"onclick="myFunction(this)">
-                            <div class="bar1"></div>
-                            <div class="bar2"></div>
-                            <div class="bar3"></div>
-                        </div> 
-                    </a>
-                </div>
-            </header>
-    
-            <div class="mobile-menu"> 
-                <nav> 
-                    <a href=""> Our Products </a>
-                    <a href=""> The Environment </a>
-                    <a href=""> About Us </a>
-                    <a href=""> Contact </a>
-                </nav>
-            </div>
-
-
+        <!-- header (on each page) -->
         <!-- Main content starts here -->
         {{content}}
 
@@ -78,7 +48,8 @@
         <footer class="featured-bg whitetxt">
             <section class="grid">
                 <div class="col-6_sm-12 padded">
-                    <img src="images/AAP - Logo Drafts.png" alt="">  
+                    <h2 id="getintouch"> Get In Touch </h2> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus consequuntur repellat ad corrupti atque earum molestias eveniet. Laboriosam quidem perferendis optio qui magni culpa facilis est iste? Suscipit, aliquid.</p>
                     <p> <strong> Email: </strong> allaboutpackaging.co.uk </p>
                     <p> <strong> Phone: </strong> 0203 994 0430 </p>
 
@@ -88,7 +59,6 @@
                     <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i>
                 </div>
                 <div class="col-6-middle padded">
-                    <h2 id="getintouch"> Get In Touch </h2>
                     <form class="grid-center" action="https://formspree.io/hello@company.com" method="POST">
                         <div class="col-6_sm-12 padded-2">
                             <input type="text" name="name" placeholder="Your Name">
@@ -116,5 +86,8 @@
 
         <!--- custom javascript files (this goes last) --->
         <script src="/scripts.js"></script>    
+
+        <!-- Lightgallery for pop-ups  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
     </body>
 </html>

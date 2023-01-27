@@ -45,5 +45,9 @@ $('.slider-container').slick({
     x.classList.toggle("change");
   }
 
-
+  // Lightgallery
+  lightGallery(document.getElementById('lightgallery'), {
+    speed: 500,
+    download: false
+});
 
