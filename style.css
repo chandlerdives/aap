@@ -30,7 +30,7 @@
   
   .padded     { padding: 5%; }
   .padded-2   { padding: 2%; }
-  .padded-15  { padding: 15%; }
+  .padded-10  { padding: 10%; }
   .padded-05  { padding: 0.5rem }
 
   .relative {position: relative;}
@@ -38,7 +38,7 @@
  
   /* bg-colours  */
   .featured-bg { background-color: #002E57; }
-  .light-bg    { background-color: #F9F6F2; }
+  .light-bg    { background-color: #83919C; }
 
 
   
@@ -82,8 +82,8 @@
    
   p {
     font-family: 'Mukta Vaani', sans-serif;
-    margin-bottom: 1rem;
-    font-size: 1rem;
+    margin-bottom: 1.1rem;
+    font-size: 1.1rem;
     font-weight: 300;
     line-height: 25px;
   }
@@ -319,7 +319,21 @@
   }
 
   .banner-about-us {
-    background-image: url(images/shrink-wrapped-boxes.jpeg);
+    background-image: url(images/working-together-fade.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-our-products {
+    background-image: url(images/shrink-boxes-header-fade.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .banner-the-environment {
+    background-image: url(images/wind-turbines-header-fade.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -339,7 +353,13 @@
   }
 
   .bg-pallets {
-    background-image: url(images/pallets.jpg);
+    background-image: url(images/stacked-pallets.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bg-plastic-bags {
+    background-image: url(images/plastic-bags.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -351,22 +371,58 @@
     background-attachment: fixed;
   }
 
-  .bg-ashby {
-    background-image: url(images/ashby.JPG);
+  .bg-warehouse {
+    background-image: url(images/warehouse-portrait.jpg);
     background-size: cover;
     background-position: center;
-    max-width: 200px;
-    margin-top: -7rem;
-    margin-left: rem;
-    margin-bottom: 1rem;
-    border-radius: 46% 46% 0% 0%;
-    z-index: 2;
+  }
+
+  .bg-recycle {
+    background-image: url(images/recycle-symbol.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-polythene {
+    background-image: url(images/1.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-cardboard {
+    background-image: url(images/2.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-stretchfilm {
+    background-image: url(images/3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-pallet {
+    background-image: url(images/4.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-post {
+    background-image: url(images/5.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-tape {
+    background-image: url(images/6.png);
+    background-size: cover;
+    background-position: center;
   }
 
   /* ----------- Gallery ----------- */
   /* Aspect Ratio  */
   .portrait-tall { padding-bottom: 175%; }
-  .portrait { padding-bottom: 125%; }
+  .portrait { padding-bottom: 40%; }
   .square { padding-bottom: 100%; }
   .landscape { padding-bottom: 66%; }
   .landscape-wide { padding-bottom: 56%; }
@@ -511,7 +567,7 @@
 }
 
 /* ------- Slick Carousel --------- */
-/* Slider */
+/* Testimonial Slider */
 .slider-container {
   padding: 5%;
   max-width: 900px;
@@ -533,7 +589,7 @@
 }
 
 .slick-dots {
-    bottom: 12%;
+    bottom: 5%;
     left: 0; /* This align the dots perfectly to the center, do not delete */
 }
 
@@ -545,4 +601,29 @@
 .slick-dots li button::before {
     font-size: 12px;
     color: #002E57;
+}
+
+.slick-arrows {
+  color: #002E57;
+}
+
+
+/* Product Slider */
+
+.items {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+  -webkit-transition:all ease-in-out 0.3s;
+  padding: 0.5rem;
+}
+
+.items.slick-slide.slick-current.slick-center {
+    display: inline-block;
+    -webkit-transform: scale(1, 1.2);
+}
+
+.sb {
+  width:100%;
+  height:600px;
+  background-color: red;
 }

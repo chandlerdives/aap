@@ -35,6 +35,50 @@ $('.slider-container').slick({
 	pauseOnDotsHover: true, // Pauses the autoplay when hovering over the dots
 });
 
+// Slider Products
+$('.slickSlider').slick({
+  centerMode: true,
+  dots: true,
+  arrows: true,
+  centerPadding: '0',
+  slidesToShow: 3,
+  infinite: true,
+  autoplay: true,
+  useTransform: true,
+});
+
+
+$('.products-slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  dots: true,
+  autoplay: true,
+  accessibility: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+	
+	
+
 // hamburger button
   $('.hamburger-button').click(function(){
     $('.mobile-menu').slideToggle(100);

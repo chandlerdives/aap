@@ -3,7 +3,7 @@ layout: default
 title: Our Products
 ---
     <!-- Header -->
-    <section class="banner-front-page">
+    <section class="banner-our-products">
             <header class="grid">
                 <div class="col-4">
                     <img src="images/AAP-transparent-sm.png" alt="" href="/index.html">
@@ -38,26 +38,50 @@ title: Our Products
         <section class="grid txtcenter padded">
             <div class="col-12 padded">
                 <h3>Our Products.</h3>
-                <a class="button-2" href="#getintouch"> Get in Touch</a>
             </div>
             <div class="col-12 padded-2"> <a href="#chooseus"><i class="fa-solid fa-angles-down"></i></a></div>
         </section>
     </section>
-
-    <!-- Pop-up Gallery -->
-    <section class="padded">
-        <div class="gallery grid" id="lightgallery">
-            {% for item in page.gallery %}
-          
-              <a class="{{item.column-size}} gallery-item" href="{{item.background_image}}">
-                <div class="bg-image {{item.aspect-ratio}}" 
-                    style="background-image: url('{{item.background_image}}');">
-                </div>
-              </a> 
-          
-            {% endfor %}
+   
+    <section class="padded light-bg">
+        <div class="slickSlider">
+            <div class="items"><div class="sb"></div></div>
+            <div class="items"> <div class="sb"></div></div>
+            <div class="items"> <div class="sb"></div></div>
+            <div class="items"> <div class="sb"></div></div>
+            <div class="items"> <div class="sb"></div></div>
+            <div class="items"> <div class="sb"></div></div>
+            <div class="items"> <div class="sb"></div></div>
+            <div class="items"> <div class="sb"></div></div>
           </div>
-      </section>
+    </section>
 
+    <!-- Products Slider -->
+    <section class="txtcenter padded featured-bg">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, placeat doloremque esse illo corrupti perferendis quisquam eveniet commodi molestiae tenetur. Consequatur optio quia ipsa iste quis mollitia provident eligendi magni.</p>
+        </div>
+
+        <div class="col-1"></div>
+        <div class="products-slider">
+            <div class="items"><div class="sb product-polythene"></div></div>
+            <div class="items"> <div class="sb product-cardboard"></div></div>
+            <div class="items"> <div class="sb product-stretchfilm"></div></div>
+            <div class="items"> <div class="sb product-pallet"></div></div>
+            <div class="items"> <div class="sb product-post"></div></div>
+            <div class="items"> <div class="sb product-tape"></div></div>
+          </div>
+    </section>
+    
+    <!-- Introduction -->
+    <section class="grid txtcenter">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, placeat doloremque esse illo corrupti perferendis quisquam eveniet commodi molestiae tenetur. Consequatur optio quia ipsa iste quis mollitia provident eligendi magni.</p>
+        </div>
+        <div class="col-1"></div>
+    </section>
       
     
