@@ -434,30 +434,9 @@
   .bg-pos-r { background-position: right; }
 
 
-  .gallery [class*="col-"] {
-    padding: 0.5%;
-    border: blue;
-  }
-
-  /* Gallery - Background Images  */
-  .bg-img-1 {
-    background-image: url(images/cardboard.jpeg);
-  }
-
-  .bg-img-2 {
-    background-image: url(images/cardboard.jpeg);
-  }
-
-  .bg-img-3 {
-    background-image: url(images/cardboard.jpeg);
-  }
-
-  .bg-img-4 {
-    background-image: url(images/cardboard.jpeg);
-  }
-
-  .bg-img-5 {
-    background-image: url(images/cardboard.jpeg);
+  .gallery {
+    padding: 5%;
+    border: black;
   }
 
   .bg-image [class*=bg-image] {
@@ -475,6 +454,20 @@
   .lg-backdrop.in {
     opacity: 0.95;
   }
+
+  /* Gallery - Background Images  */
+  .bg-img-1 { background-image: url(images/cardboard.jpeg); }
+
+  .bg-img-2 { background-image: url(images/cardboard.jpeg);}
+
+  .bg-img-3 { background-image: url(images/cardboard.jpeg);}
+
+  .bg-img-4 { background-image: url(images/cardboard.jpeg);}
+
+  .bg-img-5 {background-image: url(images/cardboard.jpeg); }
+
+ 
+
 
   /* ------------ Forms -------------- */
   input, textarea {
