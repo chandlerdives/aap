@@ -422,9 +422,9 @@
   /* ----------- Gallery ----------- */
   /* Aspect Ratio  */
   .portrait-tall { padding-bottom: 175%; }
-  .portrait { padding-bottom: 40%; }
+  .portrait { padding-bottom: 160%; }
   .square { padding-bottom: 100%; }
-  .landscape { padding-bottom: 66%; }
+  .landscape { padding-bottom: 79%; }
   .landscape-wide { padding-bottom: 56%; }
 
   /* Background Position */
@@ -434,9 +434,8 @@
   .bg-pos-r { background-position: right; }
 
 
-  .gallery {
-    padding: 5%;
-    border: black;
+  .gallery [class*="col-"] {
+    padding: 0.5%;
   }
 
   .bg-image [class*=bg-image] {
@@ -456,17 +455,16 @@
   }
 
   /* Gallery - Background Images  */
-  .bg-img-1 { background-image: url(images/cardboard.jpeg); }
+  /* .bg-img-1 { background-image: url(images/gallery-polythene.jpg); }
 
-  .bg-img-2 { background-image: url(images/cardboard.jpeg);}
+  .bg-img-2 { background-image: url(images/gallery-cardboard.jpg);}
 
-  .bg-img-3 { background-image: url(images/cardboard.jpeg);}
+  .bg-img-3 { background-image: url(images/Printing3.jpeg);}
 
-  .bg-img-4 { background-image: url(images/cardboard.jpeg);}
+  .bg-img-4 { background-image: url(images/Printing3.jpeg);}
 
-  .bg-img-5 {background-image: url(images/cardboard.jpeg); }
+  .bg-img-5 {background-image: url(images/Printing3.jpeg); } */
 
- 
 
 
   /* ------------ Forms -------------- */
