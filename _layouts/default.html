@@ -49,12 +49,12 @@
             <section class="grid">
                 <div class="col-6_sm-12 padded">
                     <h2 id="getintouch"> Get In Touch </h2> 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatibus consequuntur repellat ad corrupti atque earum molestias eveniet. Laboriosam quidem perferendis optio qui magni culpa facilis est iste? Suscipit, aliquid.</p>
+                    <p>Whether you have a query about one of our products or if you just fancy keeping in touch, we'd really like to hear from you. </p>
                     <p> <strong> Email: </strong> info@allaboutpackaging.co.uk </p>
                     <p> <strong> Phone: </strong> 0203 994 0430 </p>
 
-                    <p> <strong> T&Cs </strong> </p>
-                    <p> <strong> Privacy Policy </strong> </p>
+                    <p> <a href="/termsconditions.html"> <strong> T&Cs </strong> </a> </p>
+                    <p> <a href="/privacy.html"> <strong> Privacy Policy </strong> </a> </p>
 
                     <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i>
                 </div>
@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-12 padded-2">
                             <textarea placeholder="Your Message"></textarea>
-                            <input type="submit" value="Send" class="button">
+                            <input type="submit" value="Send" class="button-3">
                         </div>
                   </form>
                 </div>
@@ -86,6 +86,23 @@
 
         <!-- Lightgallery for pop-ups  -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/lightgallery.min.js"></script>
+
+        <!-- GetButton.io widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    facebook: "588813488281519", // Facebook page ID
+                    facebook_frame: true, // Open Facebook chat at frame
+                    call_to_action: "Chat to us here", // Call to action
+                    button_color: "#FF6550", // Color of button
+                    position: "right", // Position may be 'right' or 'left'
+                };
+                var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
 
         <!--- custom javascript files (this goes last) --->
         <script src="/scripts.js"></script>    
