@@ -88,6 +88,14 @@
     line-height: 25px;
   }
 
+  li {
+    font-family: 'Mukta Vaani', sans-serif;
+    margin-bottom: 1.1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 25px;
+  }
+
   .whitetxt {
     font-family: 'Mukta Vaani', sans-serif;
     color: white;
@@ -420,52 +428,55 @@
   }
 
   /* ----------- Gallery ----------- */
-  /* Aspect Ratio  */
-  .portrait-tall { padding-bottom: 175%; }
-  .portrait { padding-bottom: 160%; }
-  .square { padding-bottom: 100%; }
-  .landscape { padding-bottom: 79%; }
-  .landscape-wide { padding-bottom: 56%; }
+  /* Responsive Image Utility Classes  */
+.bg-image {
+	background-color: rgb(240,240,240);
+  background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
 
-  /* Background Position */
-  .bg-pos-t { background-position: top; }
-  .bg-pos-b { background-position: bottom; }
-  .bg-pos-l { background-position: left; }
-  .bg-pos-r { background-position: right; }
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 85%; }
+.landscape-wide { padding-bottom: 56%; }
 
-
-  .gallery [class*="col-"] {
-    padding: 0.5%;
-  }
-
-  .bg-image [class*=bg-image] {
-    background-color: rgb(240,240,240);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-  }
-
-  /* Background of gallery when active  */
-  .lg-backdrop {
-    background-color: grey;
-  }
-
-  .lg-backdrop.in {
-    opacity: 0.95;
-  }
-
-  /* Gallery - Background Images  */
-  /* .bg-img-1 { background-image: url(images/gallery-polythene.jpg); }
-
-  .bg-img-2 { background-image: url(images/gallery-cardboard.jpg);}
-
-  .bg-img-3 { background-image: url(images/Printing3.jpeg);}
-
-  .bg-img-4 { background-image: url(images/Printing3.jpeg);}
-
-  .bg-img-5 {background-image: url(images/Printing3.jpeg); } */
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 
+.gallery [class*="col-"] {
+  padding: 1%;
+}
+
+/* Gallery - Background Images  */
+.bg-img-1 { background-image: url(images/gallery-polythene.jpg); }
+
+.bg-img-2 { background-image: url(images/gallery-cardboard.jpg); }
+
+.bg-img-3 { background-image: url(images/gallery-stretchfilm.jpg); }
+
+.bg-img-4 { background-image: url(images/gallery-post.jpg); }
+
+.bg-img-5 { background-image: url(images/gallery-tape.jpg); }
+
+.bg-img-6 { background-image: url(images/gallery-pallets.jpg); }
+
+
+/* Background of gallery when active  */
+.lg-backdrop {
+  background-color: rgb(20,20,20);
+}
+
+.lg-backdrop.in {
+  opacity: 0.95;
+}
 
   /* ------------ Forms -------------- */
   input, textarea {
@@ -475,7 +486,6 @@
     display: block;
     width: 100%;
     font-size: 1rem;
-    vertical-align: top; 
   }
 
   /* ------------ Accordion -------------- */
