@@ -114,6 +114,12 @@
     text-decoration: none;
     color: inherit;
   }
+
+  a :hover {
+    text-decoration: none;
+    color: #D09752;
+    transition: 0.5s all;
+  }
   
   
   /* ---------- Button Styles ----------- */
@@ -236,6 +242,7 @@
   .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
+    background-color: white;
   }
   
   /* fade out the second bar */
@@ -247,6 +254,7 @@
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
+    background-color: white;
   }
   
   /* buttons styles */
@@ -297,7 +305,7 @@
   }
 
   .mobile-menu a:hover {
-    color: #BC4749;
+    color: #D09752;
   }
 
 
@@ -310,6 +318,11 @@
   @media(max-width:1071px) {
       .mob-hide { display: none; }
       .mob-show { display: block; }
+  }
+
+  @media (max-width: 48em) {
+    .hide-sm { display: none; }
+    .flex-flip-sm { flex-direction: column-reverse; }
   }
   
   
@@ -390,21 +403,19 @@
   }
 
    
-  /* ------------------ Photos ---------------- */
-  img {
-    max-width: 100%;
-  }
-
+  /* ------------------ Background Photos ---------------- */
   .bg-pallets {
     background-image: url(images/stacked-pallets.jpg);
     background-size: cover;
     background-position: center;
+    min-height: 30rem;
   }
 
   .bg-plastic-bags {
     background-image: url(images/plastic-bags.jpg);
     background-size: cover;
     background-position: center;
+    min-height: 30rem;
   }
 
   .bg-shrinkwrap {
@@ -424,6 +435,7 @@
     background-image: url(images/recycle-symbol.jpg);
     background-size: cover;
     background-position: center;
+    min-height: 30rem;
   }
 
   .product-polythene {
@@ -492,15 +504,10 @@
 
 /* Gallery - Background Images  */
 .bg-img-1 { background-image: url(images/gallery-polythene.jpg); }
-
 .bg-img-2 { background-image: url(images/gallery-cardboard.jpg); }
-
 .bg-img-3 { background-image: url(images/gallery-stretchfilm.jpg); }
-
 .bg-img-4 { background-image: url(images/gallery-post.jpg); }
-
 .bg-img-5 { background-image: url(images/gallery-tape.jpg); }
-
 .bg-img-6 { background-image: url(images/gallery-pallets.jpg); }
 
 
