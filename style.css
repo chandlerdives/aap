@@ -405,14 +405,21 @@
    
   /* ------------------ Background Photos ---------------- */
   .bg-pallets {
-    background-image: url(images/stacked-pallets.jpg);
+    background-image: url(images/blown-film.jpeg);
     background-size: cover;
     background-position: center;
     min-height: 30rem;
   }
 
-  .bg-plastic-bags {
-    background-image: url(images/plastic-bags.jpg);
+  .bg-machinery {
+    background-image: url(images/machinery-wrap.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30rem;
+  }
+
+  .bg-recyling-bags {
+    background-image: url(images/recycling.jpg);
     background-size: cover;
     background-position: center;
     min-height: 30rem;
@@ -486,7 +493,7 @@
 
 /* Aspect Ratio  */
 .portrait-tall { padding-bottom: 175%; }
-.portrait { padding-bottom: 50%; }
+.portrait { padding-bottom: 40%; }
 .square { padding-bottom: 100%; }
 .landscape { padding-bottom: 85%; }
 .landscape-wide { padding-bottom: 56%; }
