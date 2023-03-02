@@ -405,6 +405,13 @@
    
   /* ------------------ Background Photos ---------------- */
   .bg-pallets {
+    background-image: url(images/stacked-pallets.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 30rem;
+  }
+
+  .bg-blown-film {
     background-image: url(images/blown-film.jpeg);
     background-size: cover;
     background-position: center;
