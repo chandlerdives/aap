@@ -47,7 +47,7 @@
   }
 
   .bump-right {
-    margin-right: -4rem;
+    margin-right: 2rem;
     z-index:2;
   }
   
@@ -154,7 +154,7 @@
   .button-2 {
     font-family: 'Mukta Vaani', sans-serif;
     color: white;
-    background-color: #D09752;;
+    background-color: #D09752;
 	  text-decoration: none;    
 	  text-transform: uppercase;    
 	  letter-spacing: 1px;       
@@ -512,116 +512,117 @@
     background-position: center;
   }
 
+
   /* ----------- Gallery ----------- */
   /* Responsive Image Utility Classes  */
-.bg-image {
-	background-color: rgb(240,240,240);
-  background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat;
-}
+  .bg-image {
+    background-color: rgb(240,240,240);
+    background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+  }
 
-/* Aspect Ratio  */
-.portrait-tall { padding-bottom: 175%; }
-.portrait { padding-bottom: 40%; }
-.square { padding-bottom: 100%; }
-.landscape { padding-bottom: 85%; }
-.landscape-wide { padding-bottom: 56%; }
+  /* Aspect Ratio  */
+  .portrait-tall { padding-bottom: 175%; }
+  .portrait { padding-bottom: 40%; }
+  .square { padding-bottom: 100%; }
+  .landscape { padding-bottom: 85%; }
+  .landscape-wide { padding-bottom: 56%; }
 
-/* Background Position */
-.bg-pos-t { background-position: top; }
-.bg-pos-b { background-position: bottom; }
-.bg-pos-l { background-position: left; }
-.bg-pos-r { background-position: right; }
-
-
-.gallery [class*="col-"] {
-  padding: 1%;
-}
-
-/* Gallery - Background Images  */
-.bg-img-1 { background-image: url(images/gallery-polythene.jpg); }
-.bg-img-2 { background-image: url(images/gallery-cardboard.jpg); }
-.bg-img-3 { background-image: url(images/gallery-stretchfilm.jpg); }
-.bg-img-4 { background-image: url(images/gallery-post.jpg); }
-.bg-img-5 { background-image: url(images/gallery-tape.jpg); }
-.bg-img-6 { background-image: url(images/gallery-pallets.jpg); }
-.bg-img-7 { background-image: url(images/gallery-enviro.png); }
-.bg-img-8 { background-image: url(images/gallery-waste.png); }
-.bg-img-9 { background-image: url(images/gallery-more.jpg); }
+  /* Background Position */
+  .bg-pos-t { background-position: top; }
+  .bg-pos-b { background-position: bottom; }
+  .bg-pos-l { background-position: left; }
+  .bg-pos-r { background-position: right; }
 
 
-/* Background of gallery when active  */
-.lg-backdrop {
-  background-color: rgb(20,20,20);
-}
+  .gallery [class*="col-"] {
+    padding: 1%;
+  }
 
-.lg-backdrop.in {
-  opacity: 0.95;
-}
-
-@-webkit-keyframes swing {
-  15% {
-      -webkit-transform: translateY(5px);
-      transform: translateY(5px);
-  }
-  30% {
-      -webkit-transform: translateY(-5px);
-      transform: translateY(-5px);
-  }
-  50% {
-      -webkit-transform: translateY(3px);
-      transform: translateY(3px);
-  }
-  65% {
-      -webkit-transform: translateY(-3px);
-      transform: translateY(-3px);
-  }
-  80% {
-      -webkit-transform: translateY(2px);
-      transform: translateY(2px);
-  }
-  100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-  }
-}
-@keyframes swing {
-  15% {
-      -webkit-transform: translateY(5px);
-      transform: translateY(5px);
-  }
-  30% {
-      -webkit-transform: translateY(-5px);
-      transform: translateY(-5px);
-  }
-  50% {
-      -webkit-transform: translateY(3px);
-      transform: translateY(3px);
-  }
-  65% {
-      -webkit-transform: translateY(-3px);
-      transform: translateY(-3px);
-  }
-  80% {
-      -webkit-transform: translateY(2px);
-      transform: translateY(2px);
-  }
-  100% {
-      -webkit-transform: translateY(0);
-      transform: translateY(0);
-  }
-}
+  /* Gallery - Background Images  */
+  .bg-img-1 { background-image: url(images/gallery-polythene.jpg); }
+  .bg-img-2 { background-image: url(images/gallery-cardboard.jpg); }
+  .bg-img-3 { background-image: url(images/gallery-stretchfilm.jpg); }
+  .bg-img-4 { background-image: url(images/gallery-post.jpg); }
+  .bg-img-5 { background-image: url(images/gallery-tape.jpg); }
+  .bg-img-6 { background-image: url(images/gallery-pallets.jpg); }
+  .bg-img-7 { background-image: url(images/gallery-enviro.jpg); }
+  .bg-img-8 { background-image: url(images/gallery-waste.jpg); }
+  .bg-img-9 { background-image: url(images/gallery-more.jpg); }
 
 
-.swing:hover
-{
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
+  /* Background of gallery when active  */
+  .lg-backdrop {
+    background-color: rgb(20,20,20);
+  }
+
+  .lg-backdrop.in {
+    opacity: 0.95;
+  }
+
+  @-webkit-keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+  }
+  @keyframes swing {
+    15% {
+        -webkit-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+    30% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+    50% {
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px);
+    }
+    65% {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+    80% {
+        -webkit-transform: translateY(2px);
+        transform: translateY(2px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+  }
+
+
+  .swing:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
 
   /* ------------ Forms -------------- */
   input, textarea {
@@ -632,6 +633,7 @@
     width: 100%;
     font-size: 1rem;
   }
+
 
   /* ---------- Cookie Message -------- */
   .wrapper {
@@ -656,7 +658,7 @@
 
   ::selection{
     color: #fff;
-    background: #FCBA7F;
+    background: #D09752;
   }
 
   .wrapper img{
@@ -673,6 +675,7 @@
   }
 
   .content p{
+    font-family: 'Mukta Vaani', sans-serif;
     color: #858585;
     margin: 5px 0 20px 0;
   }
@@ -691,7 +694,7 @@
     font-size: 16px;
     font-weight: 500;
     border-radius: 5px;
-    background: #FCBA7F;
+    background: #D09752;
     cursor: pointer;
     transition: all 0.3s ease;
   }
@@ -705,9 +708,24 @@
   }
 
   .buttons a{
-    color: #FCBA7F;
+    font-family: 'Mukta Vaani', sans-serif;
+    color: #D09752;
   }
 
+  @keyframes slideInUp {
+    from {
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInUp {
+    animation-name: slideInUp;
+  }
 /* ------- Slick Carousel --------- */
 /* Testimonial Slider */
 .slider-container {
