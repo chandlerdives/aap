@@ -381,7 +381,7 @@
     background-image: url(images/warehouse-stackedpallets-fade.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 
   .banner-about-us {
@@ -405,18 +405,19 @@
     background-attachment: fixed;
   }
 
-  .banner-contact {
-    background-image: something in here;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll;
-  }
-
   .banner-terms {
     background-image: url(images/document-stack-fade.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
+  }
+
+  @media (max-device-width: 600px) {
+    .banner-front-page      { background-attachment: scroll; }
+    .banner-about-us        { background-attachment: scroll; }
+    .banner-our-products    { background-attachment: scroll; }
+    .banner-the-environment { background-attachment: scroll; }
+    .banner-terms           { background-attachment: scroll; }
   }
 
    
