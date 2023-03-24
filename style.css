@@ -381,7 +381,7 @@
     background-image: url(images/warehouse-stackedpallets-fade.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 
   .banner-about-us {
@@ -516,7 +516,7 @@
   /* ----------- Gallery ----------- */
   /* Responsive Image Utility Classes  */
   .bg-image {
-    background-color: rgb(240,240,240);
+    background-color: rgb(27, 27, 27);
     background-image: url('https://source.unsplash.com/Sg3XwuEpybU');
     background-size: cover; 
     background-position: center; 
@@ -555,11 +555,11 @@
 
   /* Background of gallery when active  */
   .lg-backdrop {
-    background-color: rgb(20,20,20);
+    background-color: rgb(40, 40, 40);
   }
 
   .lg-backdrop.in {
-    opacity: 0.95;
+    opacity: 1;
   }
 
   @-webkit-keyframes swing {
@@ -639,7 +639,7 @@
   .wrapper {
     position: fixed;
     bottom: 30px;
-    left: 1060px;
+    left: 500px;
     max-width: 365px;
     background: #fff;
     padding: 25px 25px 30px 25px;
