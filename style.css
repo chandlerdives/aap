@@ -787,3 +787,15 @@
   height:600px;
   background-color: red;
 }
+
+
+/* ------- Mobile Styles --------- */
+.mobiletxt {
+  text-align: left;
+}
+
+@media (max-device-width: 600px) {
+  .mobiletxt {
+    text-align: center;
+  }
+}
