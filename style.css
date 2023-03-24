@@ -9,7 +9,10 @@
   
   img { max-width: 100%; }
   
-  body { color: #484848; }
+  body { 
+    color: #484848; 
+    overflow-x: hidden;
+  }
   
   input:focus,
   select:focus,
