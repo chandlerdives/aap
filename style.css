@@ -641,9 +641,9 @@
 
   /* ---------- Cookie Message -------- */
   .wrapper {
-    position: fixed;
+    position: sticky;
     bottom: 30px;
-    left: 500px;
+    left: 50px;
     max-width: 365px;
     background: #fff;
     padding: 25px 25px 30px 25px;
