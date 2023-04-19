@@ -415,6 +415,13 @@
     background-attachment: fixed;
   }
 
+  .banner-contact {
+    background-image: url(images/contact-us-fade.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
   @media (max-device-width: 600px) {
     .banner-front-page      { background-attachment: scroll; }
     .banner-about-us        { background-attachment: scroll; }
