@@ -365,8 +365,9 @@
     color: #D09752;
   }
 
-  .fa-facebook, .fa-linkedin { 
-    padding: 1.5%;     
+  .fa-brands, .fa-facebook, .fa-linkedin { 
+    padding: 1.5%; 
+    margin-right: 1rem;    
     font-size: 2rem;
     color: white;
   }
