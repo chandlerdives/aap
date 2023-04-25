@@ -129,7 +129,7 @@
 
   a:hover {
     text-decoration: none;
-    color: #D09752;
+    color: #F8BE76;
     transition: 0.5s all;
   }
   
@@ -137,8 +137,8 @@
   /* ---------- Button Styles ----------- */
   .button {
     font-family: 'Mukta Vaani', sans-serif;
-    color: white;
-    background-color: #D09752;
+    color: #002E57;
+    background-color: #F8BE76;
 	  text-decoration: none;    
 	  text-transform: uppercase;    
 	  letter-spacing: 1px;       
@@ -151,13 +151,13 @@
 
   .button:hover {
     color: #ffffff;    
-    background-color: #5F6B36;    
+    background-color: #4C5824;    
   }
 
   .button-2 {
     font-family: 'Mukta Vaani', sans-serif;
-    color: white;
-    background-color: #D09752;
+    color: #002E57;
+    background-color: #F8BE76;
 	  text-decoration: none;    
 	  text-transform: uppercase;    
 	  letter-spacing: 1px;       
@@ -170,16 +170,17 @@
 
   .button-2:hover {
     color: #ffffff;    
-    background-color: #5F6B36;;    
+    background-color: #4C5824;    
   }
 
   .button-3 {
     font-family: 'Mukta Vaani', sans-serif;
     color: #002E57;
+    background-color: #F8BE76;
 	  text-decoration: none;    
 	  text-transform: uppercase;    
 	  letter-spacing: 1px;       
-	  border: 2px solid #002E57;   
+	  border: 2px solid #c8c8cd;   
 	  border-radius: 10px; 
     margin-top: 1rem;
 	  padding: 0.5rem 2rem;    
@@ -189,7 +190,8 @@
 
   .button-3:hover {
     color: #ffffff;    
-    background-color: #D09752;    
+    background-color: #4C5824;  
+    border: 2px solid #c8c8cd;    
   }
   
   
@@ -219,7 +221,7 @@
   }
   
   header a:hover {
-    color: #D09752;
+    color: #F8BE76;
   }
   
   footer nav a {
@@ -234,7 +236,7 @@
   }
   
   footer nav a:hover {
-    color: #D09752;
+    color: #F8BE76;
   }
 
     /* ----------- Hamburger Nav -------------- */
@@ -319,7 +321,7 @@
   }
 
   .mobile-menu a:hover {
-    color: #D09752;
+    color: #F8BE76;
   }
 
 
@@ -362,7 +364,7 @@
 
   .fa-angles-down:hover {  
     transition: 0.5s;      
-    color: #D09752;
+    color: #F8BE76;
   }
 
   .fa-brands, .fa-facebook, .fa-linkedin { 
