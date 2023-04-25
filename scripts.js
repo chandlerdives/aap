@@ -95,6 +95,8 @@ $('.products-slider').slick({
     download: false
 });
 
+
+
 // Cookies
 const cookieBox = document.querySelector(".wrapper"),
       acceptBtn = cookieBox.querySelector("button");
