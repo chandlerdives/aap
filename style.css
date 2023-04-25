@@ -75,21 +75,21 @@
   }
 
   h3 {
-    font-family: 'Mukta Vaani', sans-serif;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 1rem;
-    color: #002E57;
-  }
-
-  h4 {
     font-family: 'Noto Sans', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 1.5rem;
     color: white;
+  }
+
+  h4 {
+    font-family: 'Mukta Vaani', sans-serif;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #002E57;
   }
 
   h5 {
